@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Birthday System</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- BACKGROUND -->
+  <div class="stars"></div>
+  <div class="grid"></div>
+
+  <div class="orb orb-blue"></div>
+  <div class="orb orb-purple"></div>
+
+  <!-- BOOT SCREEN -->
+  <section class="boot-screen" id="bootScreen">
+
+    <div class="boot-box">
+
+      <div class="system-icon">
+        ◈
+      </div>
+
+      <p class="system-label">
+        BIRTHDAY SYSTEM
+      </p>
+
+      <h1>
+        SYSTEM<br>
+        <span>BOOTING...</span>
+      </h1>
+
+      <div class="loading">
+
+        <div class="loading-bar">
+          <div id="loadingProgress"></div>
+        </div>
+
+        <div class="loading-info">
+          <span id="loadingText">
+            Initializing system...
+          </span>
+
+          <span id="loadingPercent">
+            0%
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PLAYER FOUND -->
+  <section class="player-screen" id="playerScreen">
+
+    <div class="scan-line"></div>
+
+    <div class="player-box">
+
+      <div class="status">
+        <span></span>
+        PLAYER FOUND
+      </div>
+
+      <p class="mini">
+        IDENTIFICATION COMPLETE
+      </p>
+
+      <h1>
+        Muhammad Fikhy
+      </h1>
+
+      <p class="player-id">
+        PLAYER_ID : #FAHRUL-FRIEND
+      </p>
+
+      <div class="player-stats">
+
+        <div>
+          <span>AGE</span>
+          <strong>+1</strong>
+        </div>
+
+        <div>
+          <span>XP</span>
+          <strong>∞</strong>
+        </div>
+
+        <div>
+          <span>STATUS</span>
+          <strong>ONLINE</strong>
+        </div>
+
+      </div>
+
+      <button
+        class="start-btn"
+        onclick="startMission()"
+      >
+        START MISSION
+        <b>→</b>
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- MAIN BIRTHDAY -->
+  <main class="main-content" id="mainContent">
+
+    <div class="top-status">
+      <span></span>
+      SPECIAL EVENT DETECTED
+    </div>
+
+    <p class="eyebrow">
+      TODAY'S OBJECTIVE
+    </p>
+
+    <h1 class="birthday-title">
+      HAPPY<br>
+      <span>BIRTHDAY</span>
+    </h1>
+
+    <div class="name">
+      Muhammad Fikhy
+    </div>
+
+    <p class="subtitle">
+      Another year unlocked.
+      Another chapter begins.
+    </p>
+
+    <button
+      class="surprise-btn"
+      onclick="openSurprise()"
+    >
+      🎁 OPEN SURPRISE
+    </button>
+
+    <!-- MESSAGE CARD -->
+    <section
+      class="message-wrapper"
+      id="messageWrapper"
+    >
+
+      <div class="message-card">
+
+        <div class="card-top">
+
+          <span>
+            SYSTEM MESSAGE
+          </span>
+
+          <span>
+            #BDAY-001
+          </span>
+
+        </div>
+
+        <div class="cake">
+          🎂
+        </div>
+
+        <h2>
+          Mission Complete!
+        </h2>
+
+        <p>
+          Selamat ulang tahun, bro! 🎉
+        </p>
+
+        <p>
+          Semoga di umur yang baru ini
+          lu makin banyak dapet pengalaman,
+          kesempatan, dan hal-hal keren.
+        </p>
+
+        <p>
+          Tetap sehat, jangan gampang nyerah,
+          dan semoga target yang lagi lu kejar
+          satu per satu berhasil dicapai.
+        </p>
+
+        <div class="final-message">
+          KEEP GOING.<br>
+          KEEP LEVELING UP. 🚀
+        </div>
+
+        <button
+          class="replay-btn"
+          onclick="replay()"
+        >
+          ↻ REPLAY
+
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- MUSIC -->
+  <audio id="music" loop>
+    <source
+      src="assets/music.mp3"
+      type="audio/mpeg"
+    >
+  </audio>
+
+  <button
+    class="music-btn"
+    id="musicBtn"
+    onclick="toggleMusic()"
+  >
+    🔇
+  </button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
